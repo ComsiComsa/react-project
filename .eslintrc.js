@@ -1,7 +1,8 @@
 module.exports = {
     env: {
         browser: true,
-        es2021: true
+        es2021: true,
+        jest: true
     },
     extends: [
         'plugin:react/recommended',
@@ -38,6 +39,7 @@ module.exports = {
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true }]
+        'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'max-len': ['error', { ignoreComments: true, code: 100 }]
     }
 }
