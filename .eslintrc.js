@@ -39,7 +39,15 @@ module.exports = {
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true }],
-        'max-len': ['error', { ignoreComments: true, code: 100 }]
+        'i18next/no-literal-string': [
+            'error',
+            {
+                markupOnly: true,
+                ignoreAttribute: ['data-testid', 'to']
+            }
+        ],
+        'max-len': ['error', { ignoreComments: true, code: 100 }],
+        '@typescript-eslint/consistent-type-assertions': 'off',
+        'react/display-name': 'warn'
     }
 }
