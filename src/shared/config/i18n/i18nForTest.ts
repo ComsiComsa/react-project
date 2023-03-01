@@ -8,9 +8,9 @@ i18n
         fallbackLng: 'ru',
         debug: false,
         interpolation: {
-            escapeValue: false,
+            escapeValue: false
         },
-        resources: { ru: { translationsNS: {} } },
-    });
+        resources: { ru: { translationsNS: {} } }
+    })
 
-export default i18n;
+export default i18n
