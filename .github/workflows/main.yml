@@ -28,6 +28,7 @@ jobs:
 
       - name: Build project
         run: npm run build:prod
+        if: always()
 
       - name: Cache dependencies and build artifacts
         uses: actions/cache@v2
@@ -43,9 +44,12 @@ jobs:
 
       - name: linting typescript
         run: npm run lint:ts
+        if: always()
 
       - name: linting scss
         run: npm run lint:scss
+        if: always()
 
       - name: unit testing
         run: npm run test:unit
+        if: always()
